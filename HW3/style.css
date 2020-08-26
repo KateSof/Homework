@@ -1,0 +1,151 @@
+
+.myWeb{
+    width:1280px;
+    margin: auto;
+}
+.name{
+    display: flex;
+    font-size: 80px;
+    text-decoration-line: none;
+}
+a{
+    text-decoration-line: none;
+}
+.blueheading{
+    color: rgb(27, 27, 27);
+}
+.greyheading{
+ color: rgb(19, 247, 255);
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    background-color:#35444F;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+}
+.nav :hover{
+    background-color:black ;
+    padding: 23px;
+}
+
+.fnc  {
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+line-height: 28px;
+border-left: 3px solid skyblue;
+padding: 23px;
+
+
+}
+.ramd  {
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+line-height: 28px;
+border-left: 3px solid skyblue;
+padding: 23px;
+}
+
+.fant {
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+line-height: 28px;
+border-left: 3px solid skyblue;
+padding: 23px;
+}
+.nodes  {
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+    line-height: 28px;
+    border-left: 3px solid skyblue;
+    padding: 23px;
+} 
+.aside{
+    margin-top: 40px;
+    width: 344px;
+    height: 399px;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.asidemenu:hover{
+    background-color: grey;
+   text-align: center;
+  
+}
+
+.asidemenu{
+    padding:20px;
+   
+}
+article{
+    width: 885px;
+    margin-left: 28px;
+}
+.asidenav{
+    color:black;
+    font-size: 27px;
+    line-height: 27px;
+}
+main{
+    display: flex;
+}
+.artc{
+    display: flex;
+    width: 870px;
+    height: 515px;
+    border: 2px solid grey;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.goat{
+    width: 320px;
+    height: 381px;
+}
+p{
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+}
+footer{
+    display: flex;
+    background-color:rgba(99, 105, 110, 0.48);
+    height: 69px;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 926px;
+    height: 69px;
+    padding-left: 30px;
+}
+.footer:hover{
+    color: skyblue;
+   text-decoration-line: underline;
+}
+.footer{
+    font-size: 28px;
+line-height: 28px;
+color: black;
+}
+.inf{
+  padding-right: 20px;
+  padding-top: 7px;
+}
