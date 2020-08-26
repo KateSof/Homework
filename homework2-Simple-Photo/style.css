@@ -7,6 +7,10 @@ body{
     height: 50px;
   
 }
+a{
+    text-decoration-line: none;
+    cursor: pointer;
+}
 li{
     display: inline-block;
     color: darkblue;
@@ -37,7 +41,7 @@ h2{
 
 
 }
-.text{
+text{
     padding-left: 5%;
     padding-right: 5%;
     display: block;
@@ -50,9 +54,9 @@ h2{
     color: #373737;
     letter-spacing: 2px;
 }
-.secondtext{
+p{
     padding-top: 20px;
-    letter-spacing: 2px;
+    padding-bottom: 15px;
 }
 button{
     background-color:#FF0000;
@@ -66,9 +70,9 @@ button{
     font-weight: bold;
     font-size: 12px;
     line-height: 12px;
+    cursor: pointer;
 }
-.button{
-   
+main{
     text-align: center;
 }
 footer{
