@@ -7,11 +7,11 @@ body{
     height: 50px;
   
 }
-a{
+.nav{
     text-decoration-line: none;
     cursor: pointer;
 }
-li{
+.navig{
     display: inline-block;
     color: darkblue;
     padding: 17px;
@@ -29,10 +29,10 @@ li{
     align-items: center;
     margin: 0;
 }
-img{
+.mainimg{
     width: 100%;
 }
-h2{
+.name{
    padding-top: 40px;
     text-align: center;
     padding-bottom: 40px;
@@ -41,7 +41,7 @@ h2{
 
 
 }
-text{
+.text{
     padding-left: 5%;
     padding-right: 5%;
     display: block;
@@ -54,11 +54,11 @@ text{
     color: #373737;
     letter-spacing: 2px;
 }
-p{
+.inf{
     padding-top: 20px;
     padding-bottom: 15px;
 }
-button{
+.GetStarted{
     background-color:#FF0000;
     padding: 17px 43px 17px 43px;
     margin-top: 20px;
@@ -72,18 +72,15 @@ button{
     line-height: 12px;
     cursor: pointer;
 }
-main{
+.main{
     text-align: center;
 }
-footer{
+.footer{
     text-align: right;
 }
-.inf{
+.information{
     margin-right: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
     letter-spacing: 2.4px;
-}
-.text-button{
-    font-size: 20px;
 }
