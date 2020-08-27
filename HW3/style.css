@@ -30,42 +30,16 @@ a{
     padding: 23px;
 }
 
-.fnc  {
-    color: white;
-    text-decoration-line: none;
-    font-size: 24px;
-line-height: 28px;
-border-left: 3px solid skyblue;
-padding: 23px;
-
-
-}
-.ramd  {
-    color: white;
-    text-decoration-line: none;
-    font-size: 24px;
-line-height: 28px;
-border-left: 3px solid skyblue;
-padding: 23px;
-}
-
-.fant {
-    color: white;
-    text-decoration-line: none;
-    font-size: 24px;
-line-height: 28px;
-border-left: 3px solid skyblue;
-padding: 23px;
-}
-.nodes  {
+.nav-link  {
     color: white;
     text-decoration-line: none;
     font-size: 24px;
     line-height: 28px;
     border-left: 3px solid skyblue;
     padding: 23px;
+    display: block;
 } 
-.aside{
+.aside-menu{
     margin-top: 40px;
     width: 344px;
     height: 399px;
@@ -78,16 +52,13 @@ padding: 23px;
     
 }
 
-.asidemenu:hover{
+.aside-item:hover{
     background-color: grey;
    text-align: center;
   
 }
 
-.asidemenu{
-    padding:20px;
-   
-}
+
 article{
     width: 885px;
     margin-left: 28px;
@@ -96,6 +67,8 @@ article{
     color:black;
     font-size: 27px;
     line-height: 27px;
+    display: block;
+    padding:20px;
 }
 main{
     display: flex;
@@ -136,14 +109,15 @@ footer{
     height: 69px;
     padding-left: 30px;
 }
-.footer:hover{
+.foot-link:hover{
     color: skyblue;
    text-decoration-line: underline;
 }
-.footer{
+.foot-link{
     font-size: 28px;
-line-height: 28px;
-color: black;
+    line-height: 28px;
+    color: black;
+    display: block;
 }
 .inf{
   padding-right: 20px;
