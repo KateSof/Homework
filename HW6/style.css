@@ -1,0 +1,348 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    /* background-position: center right; */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+.logo{
+    font-family: 'Ubuntu';
+    font-style: bold;
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+    line-height: 22px;
+}
+.logo:hover{
+    color:#01813F;
+}
+.login-link{
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 30px;
+    border-left: solid rgba(255, 255, 255, 0.5) 1px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 80px;
+}
+
+.nav-icon{
+    display: flex;
+}
+.right-nav{
+    display: flex;
+}
+.icon-link{
+    padding-right: 22px;
+}
+
+.icon-link1{
+   background-image: url(img/Vector1.svg);
+   height: 25px;
+   width: 25px;
+   display: block;
+   background-repeat: no-repeat;
+   padding-right: 15px;
+}
+.icon-link1:hover{
+    background-image: url(img/Vector1hover.svg); 
+}
+.icon-link2:hover{
+    background-image: url(img/Vector2hover.svg); 
+}
+.icon-link3:hover{
+    background-image: url(img/Vector3hover.svg); 
+}
+.icon-link2{
+    background-image: url(img/Vector2.svg);
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-repeat: no-repeat;
+    padding-right: 15px;
+}
+.icon-link3{
+    background-image: url(img/Vector3.svg);
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-repeat: no-repeat;
+    padding-right: 15px;
+}
+.left-nav{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 80px;
+}
+.green:hover{
+    color: #01813F;
+}
+.img-form-header{
+    display: flex;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.shape{
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.title{
+    
+    font-style: normal;
+ font-weight: normal;
+ font-size: 20px;
+ line-height: 20px;
+ color: #434343;
+
+}
+.form-log-in{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+text-decoration-line: none;
+color:#3CB878;
+}
+.form-log-in:hover{
+    text-decoration-line: underline;
+}
+.form-block{
+    background-color: white;
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+    position: relative;
+    margin-bottom: 30px;
+   
+}
+.form-container{
+  margin-top:31px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 38px;
+}
+.social-networks{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    margin-top: 13px;
+}
+.facebook{
+    background-color:#305DB8;
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 22px;
+    border-radius:4px;
+    margin-right: 10px;
+    
+}
+.facebook:hover{
+    background: #022263;
+}
+.google:hover{
+    background: #AB1F09;
+}
+.facebook-text{
+    padding-left: 20px;
+}
+.google-text{
+    padding-left: 20px;
+    border-left: solid 2px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.facebook-text{
+    padding-left: 20px;
+    border-left: solid 2px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.google{
+    background-color:#DF4A32;
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 22px;
+    border-radius:4px;
+   
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.facebook-letter{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Ubuntu';
+    font-style: bold;
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+}
+.google-letter{
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Ubuntu';
+    font-style: bold;
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+}
+.pseudo-text{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+color: #848484;
+margin: 0 3px;
+
+}
+.pseudo-text::before,.pseudo-text::after{
+    content: url(img/line.svg);
+    vertical-align: 3px;
+    padding: 0 1px;
+}
+.forms{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-top:16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    border-radius:4px;
+    border: 1px solid #F2F2F2;
+    
+}
+
+.forms:active{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+
+}
+.checkbox-container{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.terms{
+    text-decoration-line: none;
+    color:#01813F;
+}
+.terms:hover{
+    text-decoration-line: underline;
+}
+.account-btn{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    background-color: rgba(60, 184, 120, 0.8);
+    align-items: center;
+    color: white;
+    cursor: pointer; 
+}
+.account-btn:hover{
+    background: #01813F;
+}
+
+
+.container-class {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer; 
+    font-size: 22px;
+    user-select: none;
+  }
+  
+  
+  .container-class input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+ 
+  .checkmarker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    
+  }
+  
+ 
+  .container-class:hover input ~ .checkmarker {
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    
+  }
+  
+  
+  .container-class input:checked ~ .checkmarker {
+    background-color:white;
+    border: 1px solid #F2F2F2;
+    
+  }
+  
+ 
+  .container-class input:checked ~ .checkmarker:after {
+    display: block;
+    
+  }
+  .checkmarker:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+  }
+
+  .container .checkmarker:after {
+    left: 4px;
+    top: 3px;
+    width: 14px;
+    height: 13.5px;
+    border: solid 2px #3CB878;;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg); 
+  }
