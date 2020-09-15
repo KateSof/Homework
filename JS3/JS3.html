@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS3</title>
+</head>
+<body>
+    <script>
+   const numOne = +prompt('Say first number');
+    const numSecond = +prompt('Say second number');
+    const operand = prompt('Say operation');
+
+    calculator(numOne,numSecond,operand);
+    function calculator(){
+
+
+        switch (operand) {
+                case '+':
+                    console.log(`${+numOne + +numSecond}`);
+                break;
+                case '-':
+                    console.log(`${+numOne - +numSecond}`);
+                break
+                case '*':
+                    console.log( `${+numOne * +numSecond}`);
+                break;
+                case "/":
+                    console.log( ` ${+numOne / +numSecond}`);
+    
+                break;
+            
+        }
+    }
+    </script>
+</body>
+</html>
