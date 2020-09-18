@@ -11,27 +11,29 @@
     const numSecond = +prompt('Say second number');
     const operand = prompt('Say operation');
 
-    calculator(numOne,numSecond,operand);
-    function calculator(){
-
-
-        switch (operand) {
+    // calculator(numOne,numSecond,operand);
+    function calculator(numOne,numSecond,operand){
+       
+            switch (operand) {
+           
                 case '+':
-                    console.log(`${+numOne + +numSecond}`);
-                break;
+                return numOne + numSecond;
+                  
+                
                 case '-':
-                    console.log(`${+numOne - +numSecond}`);
-                break
+                return numOne - numSecond;
+                
+               
                 case '*':
-                    console.log( `${+numOne * +numSecond}`);
-                break;
+                return numOne * numSecond;
+              
+                
                 case "/":
-                    console.log( ` ${+numOne / +numSecond}`);
-    
-                break;
-            
-        }
+                return numOne / numSecond;
+             }
+        
     }
+    console.log(calculator(numOne,numSecond,operand));
     </script>
 </body>
 </html>
