@@ -18,14 +18,18 @@
         
         const max = +prompt('enter num');
 
-        for (let i = 0; i <= max; i++) {
-            if (i % 5  === 0){
-                console.log(i);
-            }
-            if(max < 5  &&  max % 5 !== 0 ){
+       
+            if(max < 5  ){
                 console.log("no numbers");
             }
-        }
+            else{
+                for(let i = 0; i <= max; i++){
+                    if(i % 5 == 0){
+                console.log(i);}
+                }
+            }
+           
+        
         
 
         
