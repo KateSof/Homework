@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  function CreateNewUser(){
+    const user = {
+        birthday: prompt("dd.mm.yyyy"),
+        getBirthday: function(brth){
+           brth = this.birthday.split('.').reverse().join('-');
+            return brth;          
+        },
+        getAge: function(){
+            let today = new Date();
+            let dob = new Date(this.getBirthday());
+            let age =  today.getFullYear() - dob.getFullYear();
+            return age;
+        },
+        getPassword:function(){
+            return this.getName().slice(0,1) + this.getLastName() + this.birthday.split(".")[2];
+        },
+        getName: function () {
+        let firstName = prompt("Your name");
+        return firstName;
+        },
+        getLastName: function(){
+        let lastName = prompt("Last Name");
+        return lastName;
+        },
+}
+return user;
+}
+const result = CreateNewUser();
+console.log(result.getAge());
+console.log(result.getPassword());
+    </script>
+</body>
+</html>
