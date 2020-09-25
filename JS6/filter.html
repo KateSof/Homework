@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function filterBy(arr,type){
+ return arr.filter(function(el){if(typeof el !== type ){return type;}    
+    })
+}
+console.log(filterBy(["World","Hello",23,"23",null,true,{name:"Kate","lastaName":"Sofishenko"}],"string"));
+    </script>
+</body>
+</html>
