@@ -8,8 +8,7 @@
 <body>
     <script>
        function filterBy(arr,type){
- return arr.filter(function(el){if(typeof el !== type ){return type;}    
-    })
+        return arr.filter(function(el){return typeof el !== type})
 }
 console.log(filterBy(["World","Hello",23,"23",null,true,{name:"Kate","lastaName":"Sofishenko"}],"string"));
     </script>
