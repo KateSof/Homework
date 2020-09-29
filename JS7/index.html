@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="li-wrapper">
+
+    </ul>
+    <script>
+       
+        
+        
+        function toList(arr, parent){
+              
+             parent = document.getElementById("li-wrapper");
+            let newArr = arr.map(function(item,i,arr){
+                return  `<li>${item}</li>`;
+            });
+            console.log(newArr);
+            parent.innerHTML = `${newArr.join("")}`;
+            
+
+        }
+        
+        toList(['Kate','Masha','Dasha','Artem'], parent);
+    </script>
+</body>
+</html>
