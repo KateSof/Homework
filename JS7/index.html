@@ -15,7 +15,7 @@
         
         function toList(arr, parent){
               
-             parent = document.getElementById("li-wrapper");
+            
             let newArr = arr.map(function(item,i,arr){
                 return  `<li>${item}</li>`;
             });
@@ -25,7 +25,7 @@
 
         }
         
-        toList(['Kate','Masha','Dasha','Artem']);
+        toList(['Kate','Masha','Dasha','Artem'],document.getElementById("li-wrapper"));
     </script>
 </body>
 </html>
