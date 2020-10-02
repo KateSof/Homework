@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Price</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction:column;
+            
+         }
+         #top-menu{
+            display: flex;
+            
+         }
+         #closed{
+            margin-left: 85px;
+         }
+    </style>
+</head>
+<body>
+    <div id="container">
+      <span id="top-menu">
+        <span id="span"></span>
+        <a id="closed" href="#"></a>
+    </span>
+    <span id="price">
+        <lable>Price, $</lable>
+        <input id="input">
+    </span>
+    </div>
+    
+    <script>
+        let input = document.querySelector("#input");
+        let container = document.querySelector("#container");
+        let closed = document.querySelector("#closed");
+        let span = document.querySelector("#span");
+        function borderToGreen(){
+            document.querySelector("#input").style.border = "5px solid lime";
+        }
+        function borderToNone(){
+            if(input.value > 0){
+            document.querySelector("#input").style.border = "1px solid black";
+            document.querySelector("#input").style.borderRadius = "3px";
+            span.innerHTML = `Today's price: ${input.value}$`;
+            closed.innerHTML = "X";
+            document.getElementById('closed').onclick = function() {
+                document.getElementById('span').hidden = true;
+                document.getElementById('closed').hidden = true;
+                input.value = 0;}
+            }
+        }
+       
+        function getRed(){
+            if(input.value < 0){
+            document.querySelector("#input").style.border = "2px solid red";
+            span.innerHTML = `Incorect price!`;
+            span.style.color = "red"}
+            
+        }
+         function nothing(){
+            if(input.value === 0){
+            document.querySelector("#input").style.border = "1px solid red";}
+         }
+    input.addEventListener("blur", getRed);
+    input.addEventListener("blur", borderToNone);
+    input.addEventListener("blur", nothing);
+    input.addEventListener("focus",borderToGreen);
+    </script>
+</body>
+</html>
