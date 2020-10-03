@@ -29,6 +29,7 @@
         <lable>Price, $</lable>
         <input id="input">
     </span>
+    <span id="error"></span>
     </div>
     
     <script>
@@ -36,37 +37,35 @@
         let container = document.querySelector("#container");
         let closed = document.querySelector("#closed");
         let span = document.querySelector("#span");
-        function borderToGreen(){
-            document.querySelector("#input").style.border = "5px solid lime";
+        let error = document.querySelector("#error")
+
+        input.onfocus = function borderToGreen(){
+            input.style.border = "5px solid lime";
         }
-        function borderToNone(){
-            if(input.value > 0){
-            document.querySelector("#input").style.border = "1px solid black";
-            document.querySelector("#input").style.borderRadius = "3px";
-            span.innerHTML = `Today's price: ${input.value}$`;
-            closed.innerHTML = "X";
-            document.getElementById('closed').onclick = function() {
-                document.getElementById('span').hidden = true;
-                document.getElementById('closed').hidden = true;
-                input.value = 0;}
+        input.onblur = function onBlur(){
+            if(input.value > 0 && input.value !== NaN){
+               input.style.border = "1px solid black";
+                input.style.borderRadius = "3px";
+                span.innerHTML = `Today's price: ${input.value}$`;
+                closed.innerHTML = "X";
+                error.style.display = "none"
+                closed.onclick = function() {
+                   span.hidden = true;
+                   closed.hidden = true;
+                    input.value = 0;
+                }
+            }
+            else if(input.value < 0 || input.value == 0){
+                input.style.border = "2px solid red";
+                error.innerHTML = `Incorect price!`;
+                error.style.color = "red"
+            }
+            else{
+                input.style.border = "1px solid red";
+                error.style.display = "none"
             }
         }
-       
-        function getRed(){
-            if(input.value < 0){
-            document.querySelector("#input").style.border = "2px solid red";
-            span.innerHTML = `Incorect price!`;
-            span.style.color = "red"}
-            
-        }
-         function nothing(){
-            if(input.value === 0){
-            document.querySelector("#input").style.border = "1px solid red";}
-         }
-    input.addEventListener("blur", getRed);
-    input.addEventListener("blur", borderToNone);
-    input.addEventListener("blur", nothing);
-    input.addEventListener("focus",borderToGreen);
+   
     </script>
 </body>
 </html>
