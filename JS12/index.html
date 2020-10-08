@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+      .image-to-show {
+        width: 400px;
+        height: 400px;
+        display: none;
+      }
+      .active {
+        width: 400px;
+        height: 400px;
+        display: block;
+      }
+
+      .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="images-wrapper">
+      <img src="./img/1.jpg" id="0img" alt="image of game" class="image-to-show active" />
+      <img src="./img/2.jpg" id="1img" alt="image of game" class="image-to-show" />
+      <img src="./img/3.jpg" id="2img" alt="image of game" class="image-to-show" />
+      <img src="./img/4.jpg" id="3img" alt="image of game" class="image-to-show" />
+    </div>
+    <button id="btn">кнопка</button>
+    <script src="index.js"></script>
+  </body>
+</html>
