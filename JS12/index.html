@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Banners</title>
     <style>
-      .image-to-show {
+      .image-to-hide{
         width: 400px;
         height: 400px;
         display: none;
       }
-      .active {
+      .image-to-show {
         width: 400px;
         height: 400px;
         display: block;
@@ -22,16 +22,22 @@
         flex-wrap: wrap;
         justify-content: space-between;
       }
+      .btn{
+        display: flex;
+      }
     </style>
   </head>
   <body>
     <div class="images-wrapper">
-      <img src="./img/1.jpg" id="0img" alt="image of game" class="image-to-show active" />
-      <img src="./img/2.jpg" id="1img" alt="image of game" class="image-to-show" />
-      <img src="./img/3.jpg" id="2img" alt="image of game" class="image-to-show" />
-      <img src="./img/4.jpg" id="3img" alt="image of game" class="image-to-show" />
+      <img src="./img/1.jpg" id="0img" alt="image of game" class="img image-to-show" />
+      <img src="./img/2.jpg" id="1img" alt="image of game" class="img image-to-hide" />
+      <img src="./img/3.jpg" id="2img" alt="image of game" class="img image-to-hide" />
+      <img src="./img/4.jpg" id="3img" alt="image of game" class="img image-to-hide" />
     </div>
-    <button id="btn">кнопка</button>
+    <div class="btn">
+    <button id="stop">Stop</button>
+    <button id="run">Continue</button>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
