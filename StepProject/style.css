@@ -1,0 +1,157 @@
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url('/img/main.png');
+    /* background-position: left bottom; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(94, 93, 88, 0.6);
+    align-items: center;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+.logo-img{
+   
+    width: 58px;
+    height: 67px;
+}
+.logo-letter{
+    position: absolute;
+    top: 19px;
+    left: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 31px;
+    
+}
+.logotype{
+    position: relative;
+}
+.logo-name{
+    padding-top: 10px;
+    
+   
+}
+.logo-name-white{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+}
+.logo-name-green{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color:#18CFAB;
+}
+.nav{
+    display: flex;
+}
+.nav-item{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-right: 21px;
+    border: transparent 3px solid;
+}
+.nav-item:hover{
+    border-bottom: #18CFAB 3px solid;
+}
+.nav-link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+.main{
+    text-align: center;
+    margin-top: 200px ;
+   
+}
+.green-white-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1px;
+    margin-bottom: 60px;
+}
+.green-text{
+    color:#18CFAB;
+}
+.white-text{
+    color: white;
+}
+.slogan{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 78px;
+    line-height: 1px;
+    color: white;
+    margin-bottom: 60px;
+    
+}
+.buy{
+    font-size: 35px;
+    line-height: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 100px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.btn{
+    
+    margin-left: 13px;
+    margin-right: 13px;
+    border: none;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 32px;
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+   
+}
+.green-btn{
+    background-color: #18CFAB;
+    padding: 16px 18px 16px 18px;
+    
+   
+}
+.blue-btn{
+    background: #00CBF6;
+    padding: 16px 11px 16px 12px;
+    left: 0px;
+}
+.back-btn{
+    background-color: white;
+    width: 148px;
+    height: 63px;
+    border-radius: 3px;
+    margin-left: 13px;
+    margin-right: 13px;
+   
+}
+.first-btn, .second-btn{
+    position: relative;
+}
