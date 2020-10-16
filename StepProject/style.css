@@ -219,7 +219,7 @@
   /* Стили для списка вкладок */
   .tab{
     text-align: center;
-    
+    margin-bottom: 100px;
   }
   .tabs{
     max-width: 1160px;
@@ -228,6 +228,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
   .tab-img{
     float: left;
